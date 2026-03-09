@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pill Navigation Bar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Demo content area -->
+  <div class="demo-content">
+    <div class="page-section active" id="section-home">
+      <h1>Home</h1>
+      <p>Discover trending items, deals, and recommendations curated just for you.</p>
+    </div>
+    <div class="page-section" id="section-search">
+      <h1>Search</h1>
+      <p>Find anything you're looking for across thousands of products.</p>
+    </div>
+    <div class="page-section" id="section-offers">
+      <h1>Offers</h1>
+      <p>Exclusive deals and limited-time discounts — don't miss out.</p>
+    </div>
+    <div class="page-section" id="section-cart">
+      <h1>Cart</h1>
+      <p>Review your selected items and proceed to checkout.</p>
+    </div>
+    <div class="page-section" id="section-profile">
+      <h1>Profile</h1>
+      <p>Manage your account, orders, and personal preferences.</p>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar-wrapper" role="navigation" aria-label="Main navigation">
+    <div class="navbar">
+
+      <!-- Home -->
+      <button class="nav-item active" data-target="home" aria-label="Home" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path class="icon-home" d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H5a1 1 0 01-1-1V9.5z" />
+          <path d="M9 21V12h6v9" stroke-width="1.6" fill="none" stroke="currentColor" />
+        </svg>
+        <span class="label">Home</span>
+      </button>
+
+      <div class="nav-spacer"></div>
+
+      <!-- Search -->
+      <button class="nav-item" data-target="search" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="icon-search" cx="11" cy="11" r="7" />
+          <line x1="16.5" y1="16.5" x2="22" y2="22" />
+        </svg>
+        <span class="label">Search</span>
+      </button>
+
+      <div class="nav-spacer"></div>
+
+      <!-- Center Logo -->
+      <div class="nav-logo" aria-label="Brand logo" role="img">
+        <div class="nav-logo-inner">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="nav-spacer"></div>
+
+      <!-- Offers -->
+      <button class="nav-item" data-target="offers" aria-label="Offers">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="icon-offers" cx="12" cy="12" r="9" />
+          <path d="M8.5 15.5l7-7" stroke="white" stroke-width="1.6" />
+          <circle cx="9.5" cy="9.5" r="0.8" fill="white" stroke="none" />
+          <circle cx="14.5" cy="14.5" r="0.8" fill="white" stroke="none" />
+        </svg>
+        <span class="label">Offers</span>
+      </button>
+
+      <div class="nav-spacer"></div>
+
+      <!-- Cart -->
+      <button class="nav-item" data-target="cart" aria-label="Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path class="icon-cart" d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+          <line x1="3" y1="6" x2="21" y2="6" stroke="white" stroke-width="1.6" />
+          <path d="M16 10a4 4 0 01-8 0" stroke="white" fill="none" stroke-width="1.6" />
+        </svg>
+        <span class="label">Cart</span>
+      </button>
+
+      <div class="nav-spacer"></div>
+
+      <!-- Profile -->
+      <button class="nav-item" data-target="profile" aria-label="Profile">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="icon-profile" cx="12" cy="8" r="4" />
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" class="icon-profile" />
+        </svg>
+        <span class="label">Profile</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
